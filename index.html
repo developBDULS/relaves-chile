@@ -11,79 +11,157 @@
 <style>
 body { margin: 0; padding: 0; }
 #map { position: absolute; top: 0; bottom: 0; width: 100%; }
-#legend {
-    padding: 10px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    line-height: 18px;
-    height: 60px;
-    margin-bottom: 40px;
-    width: 150px;
-    color: #222F56;
-    font-size: 12px;
-}
-.legend-key {
-    display: inline-block;
-    border-radius: 20%;
-    width: 10px;
-    height: 10px;
-    margin-right: 5px;
-}
-.map-overlay {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: #E6DFDF;
-    margin-right: 20px;
-    font-family: Arial, sans-serif;
-    overflow: auto;
-    border-radius: 3px;
-}
-#bduls-container {
-    padding: 10px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    line-height: 18px;
-    height: 105px;
-    margin-top: 40px;
-    margin-left: 20px;
-    width: 200px;
-    text-align: center;
-}
-.bduls-info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #222F56;
-    margin-right: 20px;
-    font-family: Arial, sans-serif;
-    overflow: auto;
-    border-radius: 3px;
-}
-.title {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: #CB2424;
-    margin-right: 20px;
-    font-family: Arial, sans-serif;
-    overflow: auto;
-    border-radius: 3px;
-    text-align: center;
-}
-#map-title {
-    padding: 10px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    line-height: 18px;
-    height: 19px;
-    margin-bottom: 120px;
-    margin-left: 40px;
-    width: 150px;
-    color: white;
-    font-size: 14px;
-}
 #area-bigdata {
     color: white;
     font-size: 12px;
 }
+@media (min-width: 1024px) {
+    .legend-key {
+        display: inline-block;
+        border-radius: 20%;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+    }
+    .map-overlay {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: #E6DFDF;
+        margin-right: 20px;
+        font-family: Arial, sans-serif;
+        overflow: auto;
+        border-radius: 3px;
+    }
+    #bduls-container {
+        padding: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        line-height: 18px;
+        height: 105px;
+        margin-top: 40px;
+        margin-left: 20px;
+        width: 200px;
+        text-align: center;
+    }
+    .bduls-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #222F56;
+        margin-right: 20px;
+        font-family: Arial, sans-serif;
+        overflow: auto;
+        border-radius: 3px;
+    }
+    .title {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: #CB2424;
+        margin-right: 20px;
+        font-family: Arial, sans-serif;
+        overflow: auto;
+        border-radius: 3px;
+        text-align: center;
+    }
+    #legend {
+        padding: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        line-height: 18px;
+        height: 60px;
+        margin-bottom: 40px;
+        width: 150px;
+        color: #222F56;
+        font-size: 12px;
+    }
+    #map-title {
+        padding: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        line-height: 18px;
+        height: 19px;
+        margin-bottom: 120px;
+        margin-left: 40px;
+        width: 150px;
+        color: white;
+        font-size: 14px;
+    }
+
+}
+/*MOBILE*/
+@media (max-width: 1023px) {
+    .legend-key {
+        display: inline-block;
+        border-radius: 20%;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+    }
+    .map-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #E6DFDF;
+        margin-right: 20px;
+        font-family: Arial, sans-serif;
+        overflow: auto;
+        border-radius: 3px;
+    }
+    #bduls-container {
+        padding: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        line-height: 18px;
+        height: 120px;
+        margin-top: 15px;
+        margin-left: 20px;
+        width: 150px;
+        text-align: center;
+    }
+    .bduls-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #222F56;
+        margin-right: 20px;
+        font-family: Arial, sans-serif;
+        overflow: auto;
+        border-radius: 3px;
+    }
+    .title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #CB2424;
+        margin-right: 20px;
+        font-family: Arial, sans-serif;
+        overflow: auto;
+        border-radius: 3px;
+        text-align: center;
+    }
+    #map-title {
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    line-height: 18px;
+    height: 19px;
+    margin-top: 156px;
+    margin-left: 20px;
+    width: 150px;
+    color: white;
+    font-size: 14px;
+    }
+    #legend {
+        padding: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        line-height: 18px;
+        height: 60px;
+        margin-top: 195px;
+        margin-left: 20px;
+        width: 150px;
+        color: #222F56;
+        font-size: 12px;
+    }
+
+}
+
 </style>
 </head>
 <body>
@@ -129,7 +207,6 @@ function buildSpoke(relaves, point) {
     let nearestRelaves = turf.featureCollection([]);
     let nearestRelavesLines = turf.featureCollection([]);
     let cleanedRelaves = JSON.parse(JSON.stringify(relaves));
-    //console.log(cleanedAirports);
 
     for (let i=1;i<=10;i++) {
         const nearest = turf.nearestPoint(point, cleanedRelaves);
@@ -145,9 +222,7 @@ function buildSpoke(relaves, point) {
         const nearestLine = turf.lineString([point.geometry.coordinates, nearest.geometry.coordinates]);
         
         nearestRelaves.features.push(nearest);
-        nearestRelavesLines.features.push(nearestLine);        
-        //console.log(nearestRelaves)
-        
+        nearestRelavesLines.features.push(nearestLine);
 
         const index = cleanedRelaves.features.findIndex(n => n.properties.Empresa === nearest.properties.Empresa)
         if (index !== -1) {
@@ -180,7 +255,7 @@ function addLayers(relaves, nearest, route) {
         'type': 'geojson',
         'data': route
     });
-//LINEAS ENTRE PUNTOS
+
    map.addLayer({
         'id': 'routeLayer',
         'type': 'line',
@@ -219,7 +294,7 @@ function addLayers(relaves, nearest, route) {
             ],
             'circle-opacity': 1,
             'circle-blur': 0,
-            'circle-color':'brown' /*'#555'*/
+            'circle-color':'brown' 
         }
     });
 
@@ -239,7 +314,7 @@ function addLayers(relaves, nearest, route) {
             ],
             'circle-opacity': 1,
             'circle-blur': 0,
-            'circle-color': 'blue'/*'red'*/
+            'circle-color': 'blue'
         }
     });
 
