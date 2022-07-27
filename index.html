@@ -248,7 +248,7 @@ const popup = new mapboxgl.Popup({
     closeOnClick: true
     });
     
-map.on('mouseenter', 'globe-points', (e) => {
+map.on('click', 'globe-points', (e) => {
     // Change the cursor style as a UI indicator.
     map.getCanvas().style.cursor = 'pointer';
     
